@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashodeep Chaudhary - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Yashodeep</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Yashodeep Chaudhary</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & Computer Engineering Student</p>
+                <p class="hero-description">
+                    As Computer Engineering student passionate about full-stack development, GUI design, and creating innovative solutions.
+                    Experienced in Java, Python, Django, and modern web technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-img">
+                        <img src="img/portfolioIMG.jpeg" alt="Yashodeep Chaudhary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Engineering student at Rajiv Gandhi Institute Of Technology with a passion for 
+                        full-stack development and innovative problem-solving. Currently maintaining a CGPA of 8.6/10, 
+                        I specialize in Java, Python, Django, and modern web technologies.
+                    </p>
+                    <p>
+                        With hands-on experience in developing desktop applications, web-based systems, and real-time applications, 
+                        I enjoy creating solutions that bridge the gap between functionality and user experience. 
+                        My internship at Prodigy Infotech has strengthened my skills in full-stack development.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>8.6</h3>
+                            <p>CGPA</p>
+                        </div>
+                        <div class="stat">
+                            <h3>6+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">SQLite3</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Technologies & Frameworks</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">AWT & Swing</span>
+                        <span class="skill-item">Android (XML)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Concepts</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">MS Office</span>
+                        <span class="skill-item">Canva</span>
+                        <span class="skill-item">CRUD Operations</span>
+                        <span class="skill-item">Authentication Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Home Power Usage & Billing System</h3>
+                        <p>Desktop-based utility billing system for residential electricity usage tracking with secure user authentication, dynamic appliance selection, and real-time bill calculation using Java and SQLite.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>AWT & Swing</span>
+                            <span>SQLite</span>
+                            <span>GUI Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/yashodeepchaudhari/Home_Power_Usage_-_Billing-System.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gym Management System</h3>
+                        <p>Web-based admin dashboard for managing complete gym operations with secure authentication, member registration, equipment inventory, and CRUD functionalities using Django and SQLite3.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>SQLite3</span>
+                            <span>CRUD Operations</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/yashodeepchaudhari/GymManagementSystem.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Face Recognition Attendance System</h3>
+                        <p>Intelligent attendance system using facial recognition technology with Flask web interface, real-time face detection, multi-subject support, and automated CSV report generation with timestamp logging.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>OpenCV</span>
+                            <span>Face Recognition</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/yashodeepchaudhari/FaceRecognition_AttendanceSystem-.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's connect!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out through any of these channels!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>yashodeepchaudhary05@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-9823316305</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Boisar, Maharashtra</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/yashodeepchaudhari" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yashodeep-chaudhary-833768371" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/yashodeep_official/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-simple">
+                    <p>Feel free to reach out through any of the channels above. I'm always open to discussing new opportunities, collaborations, or just having a friendly chat about technology!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Yashodeep Chaudhary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
