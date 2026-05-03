@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yashodeep Chaudhary - Portfolio</title>
+    <title>Yashodeep Chaudhary — AI-Native Builder & Backend Developer</title>
+    <meta name="description" content="Yashodeep Chaudhary — AI-native builder shipping backend systems with Django, Python, and Java. Currently SDE intern at Aviotek on the TechnoRobotic enterprise platform.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Yashodeep</a>
+                <a href="#home">Yashodeep<span class="logo-dot">.</span></a>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -35,23 +37,37 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
+                <p class="hero-eyebrow"><span class="hero-dot"></span> SDE Intern @ Aviotek · open to opportunities</p>
                 <h1 class="hero-title">
                     Hi, I'm <span class="highlight">Yashodeep Chaudhary</span>
                 </h1>
-                <p class="hero-subtitle">Full Stack Developer & Computer Engineering Student</p>
+                <p class="hero-subtitle">AI-Native Builder · Backend Developer</p>
                 <p class="hero-description">
-                    As Computer Engineering student passionate about full-stack development, GUI design, and creating innovative solutions.
-                    Experienced in Java, Python, Django, and modern web technologies.
+                    I ship backend systems with Django, Python, and Java. Currently interning at Aviotek
+                    on the TechnoRobotic enterprise platform — pair-coding with a senior intern and
+                    using agentic workflows (Claude Code) for real production work.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-stack">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>Java</span>
+                    <span>SQL</span>
+                    <span>AWS</span>
+                    <span>Claude Code</span>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-img">
                         <img src="img/portfolioIMG.jpeg" alt="Yashodeep Chaudhary" />
+                    </div>
+                    <div class="profile-meta">
+                        <p class="profile-name">Yashodeep Chaudhary</p>
+                        <p class="profile-role">B.E. Computer Engineering · Mumbai</p>
                     </div>
                 </div>
             </div>
@@ -68,73 +84,93 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a Computer Engineering student at Rajiv Gandhi Institute Of Technology with a passion for 
-                        full-stack development and innovative problem-solving. Currently maintaining a CGPA of 8.6/10, 
-                        I specialize in Java, Python, Django, and modern web technologies.
+                        I'm an <strong>AI-native builder</strong> shipping backend systems with Django, Python, and Java.
+                        Currently a Software Developer Intern at <strong>Aviotek Business Solutions</strong>, contributing
+                        to the TechnoRobotic enterprise platform — pair-coding with a senior intern and adopting
+                        agentic workflows (Claude Code) for code generation, debugging, and PR review.
                     </p>
                     <p>
-                        With hands-on experience in developing desktop applications, web-based systems, and real-time applications, 
-                        I enjoy creating solutions that bridge the gap between functionality and user experience. 
-                        My internship at Prodigy Infotech has strengthened my skills in full-stack development.
+                        I'm comfortable building real-time features end-to-end (Django Channels / WebSockets),
+                        wiring auth and RBAC, and deploying full-stack systems on AWS. B.E. Computer Engineering at
+                        <strong>RGIT, Mumbai University</strong> (CGPA <strong>8.6/10</strong>, 2023–2027).
                     </p>
                     <div class="about-stats">
                         <div class="stat">
-                            <h3>8.6</h3>
-                            <p>CGPA</p>
+                            <h3>2</h3>
+                            <p>Internships</p>
                         </div>
                         <div class="stat">
                             <h3>6+</h3>
-                            <p>Projects Completed</p>
+                            <p>Apps Shipped</p>
                         </div>
                         <div class="stat">
-                            <h3>1+</h3>
-                            <p>Years Experience</p>
+                            <h3>3</h3>
+                            <p>AWS Services Used</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
                     <div class="about-img-container">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-terminal"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">MySQL</span>
-                        <span class="skill-item">SQLite3</span>
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-title-block">
+                            <h3>Software Developer Intern</h3>
+                            <p class="exp-company">Aviotek Business Solutions</p>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-date">2026 – Present</span>
+                            <span class="exp-location">Mumbai · Hybrid</span>
+                        </div>
+                    </div>
+                    <ul class="exp-points">
+                        <li>Contributing to the <strong>TechnoRobotic</strong> enterprise platform alongside a senior intern — picking up modules end-to-end across re-scoped requirements and incomplete specs.</li>
+                        <li>Adopted AI-native workflows day one: <strong>Claude Code</strong> and agentic tooling for boilerplate generation, debugging assistance, and a second pass on PR reviews — measurably faster ramp-up versus traditional onboarding.</li>
+                        <li>Reviewed teammate pull requests across multiple modules — combining first-principles diff reading with Claude Code as a second reviewer to catch logic regressions and edge cases before merge.</li>
+                        <li>Pair-debugged real-world integration and state-handling issues that earlier sprints had treated as flaky behavior.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Claude Code</span>
+                        <span>Agentic Coding</span>
+                        <span>PR Review</span>
+                        <span>Pair Programming</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Technologies & Frameworks</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">HTML</span>
-                        <span class="skill-item">CSS</span>
-                        <span class="skill-item">Django</span>
-                        <span class="skill-item">AWT & Swing</span>
-                        <span class="skill-item">Android (XML)</span>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-title-block">
+                            <h3>Full Stack Developer Intern</h3>
+                            <p class="exp-company">Prodigy Infotech</p>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-date">2025</span>
+                            <span class="exp-location">Remote</span>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Concepts</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">GitHub</span>
-                        <span class="skill-item">MS Office</span>
-                        <span class="skill-item">Canva</span>
-                        <span class="skill-item">CRUD Operations</span>
-                        <span class="skill-item">Authentication Systems</span>
+                    <ul class="exp-points">
+                        <li>Built and shipped <strong>4 production-style Django apps</strong> end-to-end (User Auth, Employee Management, Local Store E-commerce, Real-Time Chat) — defined data models and views from one-line briefs.</li>
+                        <li>Engineered a real-time chat service over <strong>Django Channels (WebSockets)</strong> supporting private DMs and public rooms with two-way live updates.</li>
+                        <li>Implemented secure auth using Django's session management, password hashing, and route protection across all 4 apps; added role-based access control where the use case required it.</li>
+                        <li>Designed and shipped a session-based shopping cart with dynamic quantity updates for the e-commerce platform, plus full CRUD with form validation for the employee admin dashboard.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Django</span>
+                        <span>Django Channels</span>
+                        <span>WebSockets</span>
+                        <span>Auth & RBAC</span>
+                        <span>CRUD</span>
                     </div>
                 </div>
             </div>
@@ -148,40 +184,57 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-home"></i>
+                        <i class="fas fa-dumbbell"></i>
+                        <span class="project-badge">AWS Deployed</span>
                     </div>
                     <div class="project-content">
-                        <h3>Home Power Usage & Billing System</h3>
-                        <p>Desktop-based utility billing system for residential electricity usage tracking with secure user authentication, dynamic appliance selection, and real-time bill calculation using Java and SQLite.</p>
+                        <h3>Gym Management System</h3>
+                        <p class="project-year">2025</p>
+                        <p>Django web app handling complete gym operations — members, plans, equipment inventory, enquiries — with full CRUD via Django MVT. Digitised previously paper-based record-keeping and deployed end-to-end on AWS (EC2 + RDS + S3) from local dev to a live, internet-reachable system.</p>
+                        <ul class="project-highlights">
+                            <li>Django on EC2, MySQL on RDS, media uploads on S3</li>
+                            <li>Secure admin auth with role-based access control</li>
+                            <li>Member registration with plan assignment + enquiry tracking</li>
+                            <li>Owned schema design across members / plans / equipment / enquiries</li>
+                        </ul>
                         <div class="project-tech">
-                            <span>Java</span>
-                            <span>AWT & Swing</span>
-                            <span>SQLite</span>
-                            <span>GUI Design</span>
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>AWS EC2</span>
+                            <span>AWS RDS</span>
+                            <span>AWS S3</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="https://github.com/yashodeepchaudhari/Home_Power_Usage_-_Billing-System.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/yashodeepchaudhari/GymManagementSystem.git" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-dumbbell"></i>
+                        <i class="fas fa-bolt"></i>
+                        <span class="project-badge">Desktop App</span>
                     </div>
                     <div class="project-content">
-                        <h3>Gym Management System</h3>
-                        <p>Web-based admin dashboard for managing complete gym operations with secure authentication, member registration, equipment inventory, and CRUD functionalities using Django and SQLite3.</p>
+                        <h3>Home Power Usage &amp; Billing System</h3>
+                        <p class="project-year">2024</p>
+                        <p>Desktop utility-billing system that calculates household electricity bills in real time from appliance wattage, usage hours, and consumption logic. Built a clean Java GUI with AWT &amp; Swing and persisted per-user bill summaries in SQLite.</p>
+                        <ul class="project-highlights">
+                            <li>Real-time bill calculation from appliance + usage inputs</li>
+                            <li>User registration / login with hashed credentials in SQLite</li>
+                            <li>Dynamic appliance selection (fan, AC, TV, etc.) with accurate usage entry</li>
+                            <li>Per-user persistence of bill summaries across sessions</li>
+                        </ul>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>Django</span>
-                            <span>SQLite3</span>
-                            <span>CRUD Operations</span>
+                            <span>Java</span>
+                            <span>AWT &amp; Swing</span>
+                            <span>SQLite</span>
+                            <span>OOP</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="https://github.com/yashodeepchaudhari/GymManagementSystem.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/yashodeepchaudhari/Home_Power_Usage_-_Billing-System.git" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -189,22 +242,168 @@
                 <div class="project-card">
                     <div class="project-image">
                         <i class="fas fa-user-check"></i>
+                        <span class="project-badge">Computer Vision</span>
                     </div>
                     <div class="project-content">
                         <h3>Face Recognition Attendance System</h3>
-                        <p>Intelligent attendance system using facial recognition technology with Flask web interface, real-time face detection, multi-subject support, and automated CSV report generation with timestamp logging.</p>
+                        <p class="project-year">2024</p>
+                        <p>Intelligent attendance system using facial recognition with a Flask web interface — real-time face detection, multi-subject support, and automated CSV report generation with timestamp logging.</p>
+                        <ul class="project-highlights">
+                            <li>Real-time face detection &amp; recognition with OpenCV</li>
+                            <li>Flask web interface for enrolment and attendance flows</li>
+                            <li>Multi-subject support with per-subject session tracking</li>
+                            <li>Automated CSV reports with timestamped attendance logs</li>
+                        </ul>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>Flask</span>
                             <span>OpenCV</span>
-                            <span>Face Recognition</span>
+                            <span>face_recognition</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="https://github.com/yashodeepchaudhari/FaceRecognition_AttendanceSystem-.git" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/yashodeepchaudhari/FaceRecognition_AttendanceSystem-.git" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category skill-category--accent">
+                    <h3><i class="fas fa-robot"></i> AI-Native</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Claude Code</span>
+                        <span class="skill-item">Agentic Coding</span>
+                        <span class="skill-item">AI-Assisted Debugging</span>
+                        <span class="skill-item">AI-Assisted Code Review</span>
+                        <span class="skill-item">Prompt Iteration</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend &amp; Systems</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">Django Channels</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">REST API Design</span>
+                        <span class="skill-item">WebSockets</span>
+                        <span class="skill-item">MVT Architecture</span>
+                        <span class="skill-item">Middleware</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">SQLite</span>
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">Schema Design</span>
+                        <span class="skill-item">Query Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud &amp; DevOps</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">AWS EC2</span>
+                        <span class="skill-item">AWS RDS</span>
+                        <span class="skill-item">AWS S3</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">Deployment Workflows</span>
+                        <span class="skill-item">Linux (basic)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-halved"></i> Security &amp; Auth</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Django Auth</span>
+                        <span class="skill-item">Session Management</span>
+                        <span class="skill-item">Password Hashing</span>
+                        <span class="skill-item">Route Protection</span>
+                        <span class="skill-item">RBAC</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Bootstrap</span>
+                        <span class="skill-item">Responsive UI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cubes"></i> CS Foundations</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">OOP</span>
+                        <span class="skill-item">DBMS</span>
+                        <span class="skill-item">Cloud Computing</span>
+                        <span class="skill-item">Authentication Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education &amp; Certifications</h2>
+            <div class="education-grid">
+                <div class="edu-card edu-card--primary">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-body">
+                        <h3>B.E. Computer Engineering</h3>
+                        <p class="edu-school">Rajiv Gandhi Institute of Technology, Mumbai University</p>
+                        <p class="edu-meta">2023 – 2027 · CGPA <strong>8.6/10</strong></p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-body">
+                        <h3>HSC &amp; SSC</h3>
+                        <p class="edu-school">Tarapur Vidya Mandir &amp; Junior College</p>
+                        <p class="edu-meta">HSC · 75.5% (2023) &nbsp;·&nbsp; SSC · 82.6% (2021)</p>
+                    </div>
+                </div>
+                <div class="edu-card edu-card--cert">
+                    <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="edu-body">
+                        <h3>Google Cloud Career Launchpad</h3>
+                        <p class="edu-school">Cloud Engineer Track</p>
+                        <p class="edu-meta">Certification</p>
+                    </div>
+                </div>
+                <div class="edu-card edu-card--cert">
+                    <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="edu-body">
+                        <h3>Full Stack Developer Internship</h3>
+                        <p class="edu-school">Prodigy Infotech</p>
+                        <p class="edu-meta">Internship Certificate · 2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="languages">
+                <span class="lang-label"><i class="fas fa-language"></i> Languages</span>
+                <span class="lang-item">English <em>(working)</em></span>
+                <span class="lang-item">Hindi <em>(native)</em></span>
+                <span class="lang-item">Marathi <em>(native)</em></span>
             </div>
         </div>
     </section>
@@ -216,29 +415,29 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Let's connect!</h3>
-                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out through any of these channels!</p>
+                    <p>I'm open to backend &amp; full-stack opportunities, internships, and collaborations on real production work — especially anything that mixes Django/Python with AI-native workflows. Reach out via any of the channels below.</p>
                     <div class="contact-details">
-                        <div class="contact-item">
+                        <a class="contact-item" href="mailto:yashodeepchaudhary05@gmail.com">
                             <i class="fas fa-envelope"></i>
                             <span>yashodeepchaudhary05@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
+                        </a>
+                        <a class="contact-item" href="tel:+919823316305">
                             <i class="fas fa-phone"></i>
-                            <span>+91-9823316305</span>
-                        </div>
+                            <span>+91 98233 16305</span>
+                        </a>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Boisar, Maharashtra</span>
+                            <span>Boisar, Maharashtra, India</span>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/yashodeepchaudhari" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/yashodeep-chaudhary-833768371" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/yashodeep_official/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/yashodeepchaudhari" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yashodeep-chaudhary-833768371" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/yashodeep_official/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="contact-simple">
-                    <p>Feel free to reach out through any of the channels above. I'm always open to discussing new opportunities, collaborations, or just having a friendly chat about technology!</p>
+                    <p>Always open to discussing backend system design, AI-native engineering workflows, or just a friendly chat about technology. Drop a line — I usually reply within a day.</p>
                 </div>
             </div>
         </div>
@@ -247,7 +446,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Yashodeep Chaudhary. All rights reserved.</p>
+            <p>&copy; 2026 Yashodeep Chaudhary. Built with HTML, CSS &amp; a healthy dose of Claude Code.</p>
         </div>
     </footer>
 
